@@ -1,6 +1,6 @@
 # Vislice
-##Kratek opis igre
-#se nekaj
-#its me
-##Avtorji:
+## Kratek opis igre
+# se nekaj
+# its me
+## Avtorji:
 -Valentina Macek
