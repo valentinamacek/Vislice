@@ -1,1 +1,2 @@
 # Vislice
+##Kratek opis igre
