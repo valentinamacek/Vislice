@@ -16,7 +16,7 @@ Stopnja obešenosti:
 </p>
   <img src="/img/{{igra.stevilo_napak()}}.jpg" alt="obesanje">
 %if not igra.zmaga() and not igra.poraz():
-
+  
   
 </body>
 
