@@ -4,7 +4,7 @@ PONOVLJENA_CRKA = "o"
 NAPACNA_CRKA = "-"
 ZMAGA = "W"
 PORAZ = "X"
-
+ZACETEK = "Start"
 class Igra:
 
 #     def __init__(self, geslo: str, crke: list) -> None:
@@ -112,3 +112,18 @@ import random
 def nova_igra():
     geslo = random.choice(bazen_besed)
     return Igra(geslo)
+#import uuid (zgenerira nek unique id)
+class Vislice:
+    def __init__(self) -> None:
+        self.igre = {}
+    def prost_id_igre(self):
+        return len(self.igre)
+    def nova_igra(self):
+        igra = nova_igra()
+        novi_id= self.prost_id_igre()
+        self.igre[novi_id] = (igra, ZACETEK)
+        return novi_id
+    def ugibaj(self, id_igre, crka):
+        igra= self.igre[id_igre][0]
+        novo_stanje = igra.ugibaj(crka)
+        self.igre[id_igre] = (igra, novo_stanje)
